@@ -46,7 +46,8 @@ Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coo
 
 *Production — 7,300 lines, 4 phases shipped.*
 
-<!-- <img src="assets/forgekit-slack.png" alt="Forgekit" width="100%"> -->
+<img src="assets/forgekit-slack.png" alt="Forgekit Slack workflow" width="100%">
+<img src="assets/forgekit-summary.png" alt="Forgekit project completion" width="100%">
 
 <h4 id="alphaflow">AlphaFlow — Financial Data Engine</h4>
 
