@@ -50,13 +50,13 @@ Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coo
 
 <h4 id="alphaflow">AlphaFlow — Financial Data Engine</h4>
 
-The boring-but-necessary data plumbing underneath the finance projects.
+Built a trading bot, found out there are too many alphas.
 
-Pulls from YFinance, FMP, and Firecrawl for US and Indian markets, normalizes everything into a strict `ContextPacket` schema, and runs sentiment + regulatory signal analysis through Gemini. Region-aware fallback so it degrades gracefully when a source inevitably goes down instead of taking the whole pipeline with it.
+Started as the data layer for an automated trading system. Pulls from YFinance, FMP, SEC EDGAR, SEBI/NSE, and Firecrawl across US and Indian markets. Normalizes market tape (8 technical indicators), fundamentals, regulatory filings (8-K, Form 4, 13F, DEF 14A for US; Reg 30, SAST, Reg 31, AGM for India), and sentiment into a single strict `ContextPacket` schema. Runs a 4-factor alpha scoring engine (momentum, smart money, sentiment, fundamental) through Gemini that produces a 0–10 composite score with AI narrative. Two-level caching drops repeat queries from 30s to 11ms. The deeper I went into signal aggregation, the clearer it became that the alpha surface was too broad to productize solo — so it lives as a clean, well-tested data engine instead.
 
-`Python` · `FastAPI` · `Gemini` · `YFinance` · `Pydantic` · `Firecrawl` · `uvicorn`
+`Python` · `FastAPI` · `Pydantic V2` · `Gemini 2.5 Flash Lite` · `yfinance` · `FMP` · `Firecrawl` · `sec-parser` · `diskcache`
 
-*Core ingestion complete — multi-source aggregation, schema normalization, LLM signal processing.*
+*v3.0 — 4-phase regulatory intel (US + India), alpha scoring engine, 2-level caching, 6 test suites.*
 
 <h4 id="portfoliobot">PortfolioBot — AI Portfolio Analyst</h4>
 
