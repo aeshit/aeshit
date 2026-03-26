@@ -71,20 +71,20 @@ Telegram bot for Indian stocks (NSE). 9:05 AM briefing covers portfolio health, 
 
 `Python` · `Gemini` · `Next.js` · `Telegram` · `SQLite` · `APScheduler` · `aiosqlite` · `SQLAlchemy` · `Vercel`
 
-*Production v2.1 — full trading-day pipeline, 18 handlers, 9 test suites.*
+*Production v2.1 — 87 files, ~12,600 lines, 18 Telegram handlers, 10 test suites.*
 
 <!-- <img src="assets/portfoliobot-dash.png" alt="PortfolioBot Dashboard" width="100%"> -->
 
 <h3>Utilities</h3>
 
-**Autofiller** — Got tired of tailoring resumes by hand.
+**[Editr](https://github.com/aeshit/editr)** — Got tired of tailoring resumes by hand.
 
-Parses JDs (text, URL, or file), researches the company, generates section-by-section diffs I can accept/modify/skip, and lets me refine in plain english ("drop the Kafka bullet", "lean into backend systems"). Spits out a tailored 1-page PDF. Tracks every application in CSV so I know what I sent where. `Python · Gemini · Playwright · Jinja2 · DuckDuckGo · Rich`
+Web app for tailoring resumes to job descriptions. Paste a JD (text or URL), AI parses it and researches the company, generates numbered suggestion cards (NOW / NEW / WHY) I can accept, reject, or refine in plain English ("2: mention AWS, 5: shorter"). Generates a single-page ATS-friendly PDF via Typst. Tracks every application with a full interaction timeline — screening calls, interviews, offers. Runs on localhost, accessible from my phone on the same network. `Python · Flask · Gemini · Typst · DuckDuckGo · SQLite`
 
-*Core complete — JD parsing, web research, content generation, refinement loop, PDF rendering, tracking.*
+*Production — JD parsing, web research, suggestion cards, refinement loop, Typst PDF rendering, application tracker with timeline.*
 
-**theConclave** — Two AIs walk into a room and argue about SaaS ideas.
+**[theConclave](https://github.com/aeshit/theConclave)** — Two AIs walk into a room and argue about SaaS ideas.
 
-Gemini does the research (web-grounded via Google Search), Claude passes judgment. 7-phase scan pipeline spits out 3–6 ideas per run across 14 verticals. Deep research mode runs an 8-step dossier on any single idea. Scores on 5 weighted axes, learns from its own rejections so it stops suggesting the same things, and dedupes across runs. Mobile-first dashboard for browsing and triggering new scans. `TypeScript · Gemini · Claude · SQLite · Vite · React`
+Gemini does the research (web-grounded via Google Search), Claude passes judgment. 7-phase scan pipeline spits out 3–6 ideas per run across 14 verticals and 5 themes. Deep research mode runs an 8-step dossier on any single idea — market sizing, competitor analysis, technical feasibility, regulatory landscape, monetization strategy, risk assessment, execution roadmap, and final verdict. Scores on 5 weighted axes, learns from its own rejections so it stops suggesting the same things, and dedupes across runs. Mobile-first web dashboard for browsing results and triggering new scans. `TypeScript · Gemini · Claude · SQLite · Vite · React`
 
-*Production — 14 verticals, 5 themes, checkpoint/resume.*
+*Production — 14 verticals, 5 themes, deep research pipeline, web dashboard, checkpoint/resume.*
