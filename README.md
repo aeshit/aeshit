@@ -1,7 +1,7 @@
 <h3>Building AI-native SaaS products, solo.</h3>
 
 <p>
-  <a href="#vantix">Vantix</a> · <a href="#outreachpro">OutreachPro</a> · <a href="#forgekit">Forgekit</a> · <a href="#alphaflow">AlphaFlow</a> · <a href="#portfoliobot">PortfolioBot</a>
+  <a href="#vantix">Vantix</a> · <a href="#outreachpro">OutreachPro</a> · <a href="#forgekit">AI Software House</a> · <a href="#alphaflow">AlphaFlow</a> · <a href="#portfoliobot">PortfolioBot</a>
 </p>
 
 ---
@@ -36,7 +36,7 @@ You give it a product description and a target audience. It discovers companies,
 
 <h3>Infrastructure & Engines</h3>
 
-<h4 id="forgekit">Forgekit — Multi-Agent Dev Orchestrator</h4>
+<h4 id="forgekit">AI Software House — Multi-Agent Dev Orchestrator</h4>
 
 Built my own Claude Code before Anthropic shipped theirs.
 
@@ -46,8 +46,12 @@ Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coo
 
 *Production — 7,300 lines, 4 phases shipped.*
 
-<img src="assets/forgekit-slack.png" alt="Forgekit Slack workflow" width="100%">
-<img src="assets/forgekit-summary.png" alt="Forgekit project completion" width="100%">
+<img src="assets/forgekit-slack.png" alt="AI Software House Slack workflow" width="100%">
+<img src="assets/forgekit-summary.png" alt="AI Software House project completion" width="100%">
+
+**Demo — TasksBoard** (built entirely by the agents from a single prompt):
+
+<img src="assets/tasksboard.png" alt="TasksBoard — built by AI Software House" width="100%">
 
 <h4 id="alphaflow">AlphaFlow — Financial Data Engine</h4>
 
