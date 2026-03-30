@@ -1,8 +1,34 @@
 <h3>Building AI-native SaaS products, solo.</h3>
 
 <p>
-  <a href="#vantix">Vantix</a> · <a href="#outreachpro">OutreachPro</a> · <a href="#forgekit">AI Software House</a> · <a href="#alphaflow">AlphaFlow</a> · <a href="#portfoliobot">PortfolioBot</a>
+  <a href="#builtlike">BuiltLike</a> · <a href="#reels">Reels</a> · <a href="#vantix">Vantix</a> · <a href="#outreachpro">OutreachPro</a> · <a href="#forgekit">AI Software House</a> · <a href="#alphaflow">AlphaFlow</a> · <a href="#portfoliobot">PortfolioBot</a> · <a href="#editr">Editr</a> · <a href="#conclave">theConclave</a>
 </p>
+
+---
+
+<h3 id="builtlike">BuiltLike — Train Like Your Heroes</h3>
+
+Pick a hero. Follow their program. Level up.
+
+Gamified fitness app where users choose from 9 celebrity heroes (Ronaldo, Hemsworth, Bane, Bruce Lee, Rocky, The Rock, Arnold, Mike Tyson, Virat Kohli) and follow structured workout programs. XP system with levels and badges tracks progress. 175 exercises with video demos sourced from MuscleWiki. Custom program builder for users who want their own splits. Dark-mode-first mobile UI with haptics and Lottie animations. Supabase handles auth, database, and storage — no custom backend.
+
+`React Native` · `Expo SDK 55` · `TypeScript` · `NativeWind` · `Supabase` · `Zustand` · `TanStack Query` · `Reanimated` · `Lottie` · `Razorpay`
+
+*Coming to Android. iOS next.*
+
+<!-- <img src="assets/builtlike-hero.png" alt="BuiltLike Hero Selection" width="100%"> -->
+
+---
+
+<h3 id="reels">Reels — See What Claude Is Thinking</h3>
+
+Your AI has an inner monologue. Now it has a screen.
+
+Real-time visualization tool that opens a browser window with a futuristic node graph while Claude Code works. Extracts thinking blocks from transcripts, renders file operations as glowing nodes (color-coded by tool type — cyan for reads, green for edits, orange for bash), connected by edges in a Three.js scene with bloom post-processing and orbital rings that speed up during activity. HUD overlay shows activity feed, tool stats, timer, and current reasoning text. Integrates via Claude Code hooks — zero config once installed.
+
+`TypeScript` · `Express` · `Three.js` · `SSE` · `Claude Code Hooks`
+
+*Plug it in. Watch Claude think.*
 
 ---
 
@@ -14,7 +40,7 @@ External crawl engine (Playwright + mitmproxy) that audits websites and mobile a
 
 `TypeScript` · `Fastify` · `tRPC` · `Next.js` · `PostgreSQL` · `TimescaleDB` · `Redis` · `BullMQ` · `Playwright` · `mitmproxy` · `Stripe` · `Razorpay` · `Clerk` · `MinIO` · `Turborepo`
 
-*Core platform complete — crawl engine, policy analysis, evidence vault, multi-tenant dashboard.*
+*Complete. Waiting for compliance teams to care.*
 
 <!-- <img src="assets/vantix-dashboard.png" alt="Vantix Dashboard" width="100%"> -->
 
@@ -28,15 +54,13 @@ You give it a product description and a target audience. It discovers companies,
 
 `Next.js` · `TypeScript` · `FastAPI` · `Python` · `PostgreSQL` · `Redis` · `Celery` · `Claude API` · `Gemini` · `SQLAlchemy` · `Pydantic` · `Hunter.io` · `Zustand`
 
-*12/13 items shipped — pipeline, auth, enrichment, email infra, tracking. Next: commercial integrations.*
+*Finding leads while you sleep.*
 
 <!-- <img src="assets/outreach-pipeline.png" alt="OutreachPro Pipeline" width="100%"> -->
 
 ---
 
-<h3>Infrastructure & Engines</h3>
-
-<h4 id="forgekit">AI Software House — Multi-Agent Dev Orchestrator</h4>
+<h3 id="forgekit">AI Software House — Multi-Agent Dev Orchestrator</h3>
 
 Built my own Claude Code before Anthropic shipped theirs.
 
@@ -44,16 +68,22 @@ Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coo
 
 `Python` · `asyncio` · `FastAPI` · `Claude CLI` · `Slack` · `Docker` · `SQLAlchemy` · `SSE`
 
-*Production — 7,300 lines, 4 phases shipped.*
+*Responsible for half this page.*
 
-<img src="assets/forgekit-slack.png" alt="AI Software House Slack workflow" width="100%">
-<img src="assets/forgekit-summary.png" alt="AI Software House project completion" width="100%">
+<table>
+  <tr>
+    <td><img src="assets/forgekit-slack.png" alt="AI Software House Slack workflow" height="360"></td>
+    <td><img src="assets/forgekit-summary.png" alt="AI Software House project completion" height="360"></td>
+  </tr>
+</table>
 
 **Demo — TasksBoard** (built entirely by the agents from a single prompt):
 
 <img src="assets/tasksboard.png" alt="TasksBoard — built by AI Software House" width="100%">
 
-<h4 id="alphaflow">AlphaFlow — Financial Data Engine</h4>
+---
+
+<h3 id="alphaflow">AlphaFlow — Financial Data Engine</h3>
 
 Built a trading bot, found out there are too many alphas.
 
@@ -61,9 +91,11 @@ Started as the data layer for an automated trading system. Aggregates from gover
 
 `Python` · `FastAPI` · `Pydantic V2` · `Gemini 2.5 Flash Lite` · `yfinance` · `FMP` · `Firecrawl` · `sec-parser` · `diskcache`
 
-*v3.0 — 4-phase regulatory intel (US + India), alpha scoring engine, 2-level caching, 6 test suites.*
+*Retired as a product. Still running under the hood.*
 
-<h4 id="portfoliobot">PortfolioBot — AI Portfolio Analyst</h4>
+---
+
+<h3 id="portfoliobot">PortfolioBot — AI Portfolio Analyst</h3>
 
 My morning newspaper, except it actually knows my portfolio and doesn't waste my time.
 
@@ -71,20 +103,22 @@ Telegram bot for Indian stocks (NSE). 9:05 AM briefing covers portfolio health, 
 
 `Python` · `Gemini` · `Next.js` · `Telegram` · `SQLite` · `APScheduler` · `aiosqlite` · `SQLAlchemy` · `Vercel`
 
-*Production v2.1 — 87 files, ~12,600 lines, 18 Telegram handlers, 10 test suites.*
+*Wakes me up at 9:05 every morning.*
 
 <!-- <img src="assets/portfoliobot-dash.png" alt="PortfolioBot Dashboard" width="100%"> -->
 
+---
+
 <h3>Utilities</h3>
 
-**[Editr](https://github.com/aeshit/editr)** — Got tired of tailoring resumes by hand.
+**[Editr](https://github.com/aeshit/editr)** — <span id="editr">Got tired of tailoring resumes by hand.</span>
 
-Web app for tailoring resumes to job descriptions. Paste a JD (text or URL), AI parses it and researches the company, generates numbered suggestion cards (NOW / NEW / WHY) I can accept, reject, or refine in plain English ("2: mention AWS, 5: shorter"). Generates a single-page ATS-friendly PDF via Typst. Tracks every application with a full interaction timeline — screening calls, interviews, offers. Runs on localhost, accessible from my phone on the same network. `Python · Flask · Gemini · Typst · DuckDuckGo · SQLite`
+Web app for tailoring resumes to job descriptions. Paste a JD (text or URL), AI parses it and researches the company via DuckDuckGo, generates numbered suggestion cards (NOW / NEW / WHY) I can accept, reject, or refine in plain English ("2: mention AWS, 5: shorter"). Never fabricates — only reframes existing experience. Auto-reorders skills to prioritize JD-relevant ones and weaves ATS keywords into bullet points. Generates a single-page PDF via Typst. Drafts auto-save and resume across sessions. Application tracker with drag-reorder, inline editing, round notes, and archive with outcomes. `Python · Flask · Gemini 2.5 Flash · Typst · DuckDuckGo · BeautifulSoup`
 
-*Production — JD parsing, web research, suggestion cards, refinement loop, Typst PDF rendering, application tracker with timeline.*
+*Handles every resume I send out.*
 
-**[theConclave](https://github.com/aeshit/theConclave)** — Two AIs walk into a room and argue about SaaS ideas.
+**[theConclave](https://github.com/aeshit/theConclave)** — <span id="conclave">Two AIs walk into a room and argue about SaaS ideas.</span>
 
 Gemini does the research (web-grounded via Google Search), Claude passes judgment. 7-phase scan pipeline spits out 3–6 ideas per run across 14 verticals and 5 themes. Deep research mode runs an 8-step dossier on any single idea — market sizing, competitor analysis, technical feasibility, regulatory landscape, monetization strategy, risk assessment, execution roadmap, and final verdict. Scores on 5 weighted axes, learns from its own rejections so it stops suggesting the same things, and dedupes across runs. Mobile-first web dashboard for browsing results and triggering new scans. `TypeScript · Gemini · Claude · SQLite · Vite · React`
 
-*Production — 14 verticals, 5 themes, deep research pipeline, web dashboard, checkpoint/resume.*
+*Still running. Still arguing.*
