@@ -1,125 +1,104 @@
+<h2>Shipping.</h2>
+
 <h3>Building AI-native SaaS products, solo.</h3>
 
 <p>
   <a href="https://github.com/aeshit">GitHub</a> ·
-  <a href="#builtlike">BuiltLike</a> · <a href="#reels">Reels</a> · <a href="#vantix">Vantix</a> · <a href="#outreachpro">OutreachPro</a> · <a href="#forgekit">AI Software House</a> · <a href="#alphaflow">AlphaFlow</a> · <a href="#portfoliobot">PortfolioBot</a> · <a href="#editr">Editr</a> · <a href="#conclave">theConclave</a>
+  <a href="#live">Live</a> ·
+  <a href="#building">Building Now</a> ·
+  <a href="#markets">Markets</a> ·
+  <a href="#utilities">Utilities</a> ·
+  <a href="#scooped">Scooped</a>
 </p>
 
 ---
 
-<h3 id="builtlike"><a href="https://builtlike.app">BuiltLike</a> — Train Like Your Heroes</h3>
+<h3 id="live">Live</h3>
 
-Pick a hero. Follow their program. Level up.
+### [builtlike.app](https://builtlike.app) &nbsp;·&nbsp; **BuiltLike**
 
-Gamified fitness app where users choose from 9 celebrity heroes (Ronaldo, Hemsworth, Bane, Bruce Lee, Rocky, The Rock, Arnold, Mike Tyson, Virat Kohli) and follow structured workout programs. XP system with levels and badges tracks progress. 175 exercises with video demos sourced from MuscleWiki. Custom program builder for users who want their own splits. Dark-mode-first mobile UI with haptics and Lottie animations. Supabase handles auth, database, and storage — no custom backend.
+Train like your heroes. Gamified fitness app — nine celebrity programs and a library of 200+ exercises with video demos. Web is live; Android awaiting Play Store approval; iOS next.
 
-`React Native` · `Expo SDK 55` · `TypeScript` · `NativeWind` · `Supabase` · `Zustand` · `TanStack Query` · `Reanimated` · `Lottie` · `Razorpay`
+`React Native` · `Expo` · `TypeScript` · `Supabase` · `NativeWind` · `Razorpay`
 
-*Coming to Android. iOS next.*
+### [dpdpscore.in](https://dpdpscore.in) &nbsp;·&nbsp; **DPDP Score**
 
-<!-- <img src="assets/builtlike-hero.png" alt="BuiltLike Hero Selection" width="100%"> -->
+India's public DPDP compliance index. An external crawl engine audits websites against the DPDP Act, captures consent states across the full user lifecycle (pre-consent, post-consent, withdrawal), and publishes a comparable score. **270+ Indian companies already scored and indexed.**
 
----
-
-<h3 id="reels">Reels — See What Claude Is Thinking</h3>
-
-Your AI has an inner monologue. Now it has a screen.
-
-Real-time visualization tool that opens a browser window with a futuristic node graph while Claude Code works. Extracts thinking blocks from transcripts, renders file operations as glowing nodes (color-coded by tool type — cyan for reads, green for edits, orange for bash), connected by edges in a Three.js scene with bloom post-processing and orbital rings that speed up during activity. HUD overlay shows activity feed, tool stats, timer, and current reasoning text. Integrates via Claude Code hooks — zero config once installed.
-
-`TypeScript` · `Express` · `Three.js` · `SSE` · `Claude Code Hooks`
-
-*Plug it in. Watch Claude think.*
+`TypeScript` · `Next.js` · `Fastify` · `tRPC` · `PostgreSQL` · `TimescaleDB` · `Redis` · `BullMQ` · `Playwright` · `mitmproxy` · `Razorpay`
 
 ---
 
-<h3 id="vantix">Vantix — Compliance Observability Suite</h3>
+<h3 id="building">Building Now</h3>
 
-Companies say they follow privacy laws. This proves whether they actually do — from the outside.
+In flight.
 
-External crawl engine (Playwright + mitmproxy) that audits websites and mobile apps against DPDP, CERT-In, SOC 2, and ISO 27001. Captures consent states across the full lifecycle — pre-consent, post-consent, withdrawal. LLM-powered policy analysis across 220+ rules. Evidence goes into a WORM vault with hash-chained immutability. Ships with a public company rating platform and multi-tenant dashboard (CEO, Developer, DPO, Billing personas).
+### **subBuddy** — *Subscription commerce for Indian Shopify stores.*
 
-`TypeScript` · `Fastify` · `tRPC` · `Next.js` · `PostgreSQL` · `TimescaleDB` · `Redis` · `BullMQ` · `Playwright` · `mitmproxy` · `Stripe` · `Razorpay` · `Clerk` · `MinIO` · `Turborepo`
+Embedded Shopify app built around Razorpay UPI Autopay and RBI e-mandate. Plan builder, subscription lifecycle, customer portal, and smart dunning for failed recurring payments — without the USD pricing of foreign alternatives.
 
-*Complete. Waiting for compliance teams to care.*
+`Remix` · `TypeScript` · `Prisma` · `PostgreSQL` · `BullMQ` · `Razorpay` · `Shopify App Bridge`
 
-<!-- <img src="assets/vantix-dashboard.png" alt="Vantix Dashboard" width="100%"> -->
+### **OutreachPro**
 
----
+Autonomous AI sales agent. Finds its own leads, researches decision-makers, writes personalized cold emails across 12 templates × 8 verticals, and tracks ROI attribution back to USD. Nothing sends without inbox review.
 
-<h3 id="outreachpro">OutreachPro — Autonomous AI Sales Agent</h3>
-
-Not a CSV email blaster — this one finds its own leads.
-
-You give it a product description and a target audience. It discovers companies, hunts down decision-makers, researches each one, scores them 0–100, writes personalized cold emails (12 templates × 8 verticals), SMTP-verifies deliverability, checks SPF/DKIM/DMARC, and tracks ROI attribution back to USD. Pipeline is pluggable — users inject custom research nodes for domain-specific qualification. Nothing sends without inbox review first.
-
-`Next.js` · `TypeScript` · `FastAPI` · `Python` · `PostgreSQL` · `Redis` · `Celery` · `Claude API` · `Gemini` · `SQLAlchemy` · `Pydantic` · `Hunter.io` · `Zustand`
-
-*Finding leads while you sleep.*
-
-<!-- <img src="assets/outreach-pipeline.png" alt="OutreachPro Pipeline" width="100%"> -->
+`Next.js` · `TypeScript` · `FastAPI` · `Python` · `PostgreSQL` · `Redis` · `Celery` · `Claude` · `Gemini`
 
 ---
 
-<h3 id="forgekit">AI Software House — Multi-Agent Dev Orchestrator</h3>
+<h3 id="markets">Markets</h3>
 
-Built my own Claude Code before Anthropic shipped theirs.
+From a morning Telegram ping to a backtesting lab. Listed newest first.
 
-Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coordinate through Slack to build production apps from a text description. Tasks run in parallel via git worktrees, code gets reviewed before merge, discovery runs up to 5 rounds, agents talk to each other, and there's a daily token budget so it doesn't burn through your API credits overnight.
+### **AlphaEngine**
 
-`Python` · `asyncio` · `FastAPI` · `Claude CLI` · `Slack` · `Docker` · `SQLAlchemy` · `SSE`
+Standalone strategy lab and backtester. Walk-forward validation against historical tape, multi-strategy composition, and an execution runtime that can talk to a live order book.
 
-*Responsible for half this page.*
+`Python` · `FastAPI` · `NumPy` · `pandas` · `Jupyter`
 
-<table>
-  <tr>
-    <td><img src="assets/forgekit-slack.png" alt="AI Software House Slack workflow" height="360"></td>
-    <td><img src="assets/forgekit-summary.png" alt="AI Software House project completion" height="360"></td>
-  </tr>
-</table>
+### **AlphaFlow**
 
-**Demo — TasksBoard** (built entirely by the agents from a single prompt):
+A normalized financial data engine. Aggregates regulatory filings (SEC EDGAR, SEBI, NSE) and market data across US and Indian markets — normalizes tape, fundamentals, filings, and sentiment into a strict `ContextPacket` schema. Ships with a 4-factor alpha scoring engine that produces a composite score with an AI-generated narrative.
 
-<img src="assets/tasksboard.png" alt="TasksBoard — built by AI Software House" width="100%">
+`Python` · `FastAPI` · `Pydantic` · `Gemini` · `Firecrawl` · `sec-parser`
 
----
+### **PortfolioBot** — *Wakes me up at 9:05 every morning.*
 
-<h3 id="alphaflow">AlphaFlow — Financial Data Engine</h3>
+Telegram bot for Indian equities. Pre-market briefing covers portfolio health, macro context, and picks. Scans NSE tape every 30 minutes during market hours but only pings when two or more technicals breach simultaneously. FIFO lot tracking with full STCG/LTCG/STT tax math.
 
-Built a trading bot, found out there are too many alphas.
-
-Started as the data layer for an automated trading system. Aggregates from government regulatory databases (SEC EDGAR, SEBI, NSE), commercial APIs (YFinance, FMP), and web scraping (Firecrawl) across US and Indian markets. Normalizes market tape (8 technical indicators), fundamentals, regulatory filings (8-K, Form 4, 13F, DEF 14A for US; Reg 30, SAST, Reg 31, AGM for India), and sentiment into a single strict `ContextPacket` schema. Runs a 4-factor alpha scoring engine (momentum, smart money, sentiment, fundamental) through Gemini that produces a 0–10 composite score with AI narrative. Two-level caching drops repeat queries from 30s to 11ms. The deeper I went into signal aggregation, the clearer it became that the alpha surface was too broad to productize solo — so it lives as a clean, well-tested data engine instead.
-
-`Python` · `FastAPI` · `Pydantic V2` · `Gemini 2.5 Flash Lite` · `yfinance` · `FMP` · `Firecrawl` · `sec-parser` · `diskcache`
-
-*Retired as a product. Still running under the hood.*
+`Python` · `FastAPI` · `Gemini` · `Next.js` · `SQLAlchemy` · `Vercel`
 
 ---
 
-<h3 id="portfoliobot">PortfolioBot — AI Portfolio Analyst</h3>
+<h3 id="utilities">Utilities</h3>
 
-My morning newspaper, except it actually knows my portfolio and doesn't waste my time.
+### **[Editr](https://github.com/aeshit/editr)** — *Got tired of tailoring resumes by hand.*
 
-Telegram bot for Indian stocks (NSE). 9:05 AM briefing covers portfolio health, international/national markets, holdings analysis, and picks. Scans every 30 min during market hours — RSI, MACD, VWAP, EMA — but only pings when 2+ indicators breach simultaneously. News from 7 RSS feeds, fingerprint-deduped so the same story doesn't hit me twice in 4 hours. On-demand chat with 7 tools, FIFO lot tracking with full tax math (STCG/LTCG/STT/GST). I can log trades via text, photo, CSV, or just pasting my holdings. Dashboard lives on Vercel, syncs every 30 min. Runs on three tiers of Gemini. Whole thing costs ₹7/month.
+Parses a JD, researches the company, suggests card-based edits I refine in plain English. Outputs a single-page PDF via Typst.
 
-`Python` · `Gemini` · `Next.js` · `Telegram` · `SQLite` · `APScheduler` · `aiosqlite` · `SQLAlchemy` · `Vercel`
+`Python` · `Flask` · `Gemini` · `Typst`
 
-*Wakes me up at 9:05 every morning.*
+### **[theConclave](https://github.com/aeshit/theConclave)** — *Two AIs walk into a room and argue about SaaS ideas.*
 
-<!-- <img src="assets/portfoliobot-dash.png" alt="PortfolioBot Dashboard" width="100%"> -->
+Gemini researches, Claude judges. 7-phase scan across 14 verticals with deep-research dossiers and cross-run learning.
+
+`TypeScript` · `Gemini` · `Claude` · `React`
 
 ---
 
-<h3>Utilities</h3>
+<h3 id="scooped">Scooped</h3>
 
-**[Editr](https://github.com/aeshit/editr)** — <span id="editr">Got tired of tailoring resumes by hand.</span>
+Built these to solve my own problems. Watched the big labs build theirs around the same time. Moved on.
 
-Web app for tailoring resumes to job descriptions. Paste a JD (text or URL), AI parses it and researches the company via DuckDuckGo, generates numbered suggestion cards (NOW / NEW / WHY) I can accept, reject, or refine in plain English ("2: mention AWS, 5: shorter"). Never fabricates — only reframes existing experience. Auto-reorders skills to prioritize JD-relevant ones and weaves ATS keywords into bullet points. Generates a single-page PDF via Typst. Drafts auto-save and resume across sessions. Application tracker with drag-reorder, inline editing, round notes, and archive with outcomes. `Python · Flask · Gemini 2.5 Flash · Typst · DuckDuckGo · BeautifulSoup`
+### **AI Software House** — *Multi-agent dev orchestrator.*
 
-*Handles every resume I send out.*
+Three agents — Atlas (architect), Dev (implementer), Charon (reviewer) — coordinate through Slack to build production apps from a text prompt. Parallel execution via git worktrees, code review before merge, multi-round discovery. Predates Claude Agent SDK and ChatGPT Agents.
 
-**[theConclave](https://github.com/aeshit/theConclave)** — <span id="conclave">Two AIs walk into a room and argue about SaaS ideas.</span>
+`Python` · `asyncio` · `Claude SDK` · `Slack` · `SQLAlchemy`
 
-Gemini does the research (web-grounded via Google Search), Claude passes judgment. 7-phase scan pipeline spits out 3–6 ideas per run across 14 verticals and 5 themes. Deep research mode runs an 8-step dossier on any single idea — market sizing, competitor analysis, technical feasibility, regulatory landscape, monetization strategy, risk assessment, execution roadmap, and final verdict. Scores on 5 weighted axes, learns from its own rejections so it stops suggesting the same things, and dedupes across runs. Mobile-first web dashboard for browsing results and triggering new scans. `TypeScript · Gemini · Claude · SQLite · Vite · React`
+### **Reels** — *A live 3D companion for Claude Code.*
 
-*Still running. Still arguing.*
+File operations rendered as glowing nodes in a Three.js scene with HUD overlay and bloom post-processing — hooked directly into Claude Code transcripts. Predates Claude's own companion view.
+
+`TypeScript` · `Three.js` · `SSE`
