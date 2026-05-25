@@ -11,7 +11,6 @@ India's first public compliance rating platform for the Digital Personal Data Pr
 - 270+ Indian companies scored and indexed.
 - 3-phase consent crawl via headless Playwright — captures pre-consent, post-consent, and post-withdrawal state for every domain.
 - LLM-assisted policy analysis grades required disclosure fields against the actual privacy policy text.
-- GeoIP lookup on every third-party destination flags unannounced cross-border transfers.
 - 4-category weighted scoring engine across 220+ DPDP-specific rules.
 - HITL-gated scan pipeline: BullMQ job queue on a self-hosted runner, bi-weekly automated rescans via GitHub Actions, delta hold and policy hold gates before publish.
 
@@ -44,7 +43,7 @@ Three tools built on a shared SQLite market data layer — daily OHLCV candles f
 
 ### Completed Quests
 
-- **[Forgekit](https://github.com/aeshit/ai-software-house)** — Three-agent dev orchestrator. Architect, implementer, and reviewer coordinate through Slack to ship apps from a text prompt. Parallel execution via git worktrees, code review before merge, multi-round discovery. Built on asyncio with SQLAlchemy. Predates the Claude Agent SDK.
+- **[AI Software House](https://github.com/aeshit/ai-software-house)** — Three-agent dev orchestrator. Architect, implementer, and reviewer coordinate through Slack to ship apps from a text prompt. Parallel execution via git worktrees, code review before merge, multi-round discovery. Built on asyncio with SQLAlchemy. Predates the Claude Agent SDK.
 - **theConclave** — AI-powered competitive intelligence engine. Runs web-grounded deep research across 14 verticals, evaluates market gaps through a 7-phase analytical pipeline, and produces scored dossiers with a 5-axis composite rating covering market size, competition density, technical feasibility, defensibility, and monetisation potential.
 - **Editr** — Resume tailoring tool. Paste a job description, get back a single-page PDF restructured and rewritten for the role. Typst handles typesetting, Supabase handles state.
 - **[Reels](https://github.com/aeshit/reels)** — Real-time 3D companion for Claude Code. File operations rendered as glowing nodes in a Three.js force graph via SSE. Predates Claude's own companion view.
